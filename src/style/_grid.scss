@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+}
+.grid_center {
+  justify-items: center;
+}
+.grid_center_vertical {
+  align-content: center;
+}
+.grid_left {
+  justify-items: start;
+}
+.grid_right {
+  justify-items: end;
+}
