@@ -1,7 +1,9 @@
 <template>
-  <nav class="header">
-    <h1>hello</h1>
-  </nav>
+  <v-app-bar
+    color="primary"
+    dark>
+    <v-toolbar-title >Задачи</v-toolbar-title>
+  </v-app-bar>
 </template>
 
 <style lang="scss" scoped>

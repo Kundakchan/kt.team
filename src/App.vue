@@ -1,12 +1,14 @@
 <template>
-  <div id="app" class="app grid max-width max-height">
-    <header class="header padding-gap">
-      <app-header/>
-    </header>
-    <main class="main padding-gap">
-      <router-view/>
-    </main>
-  </div>
+  <v-app>
+    <div id="app" class="app grid max-width max-height">
+      <header class="header">
+        <app-header/>
+      </header>
+      <main class="main">
+        <router-view/>
+      </main>
+    </div>
+  </v-app>
 </template>
 
 <script>
@@ -24,15 +26,15 @@ export default {
   grid-template-rows: auto 1fr;
 }
 .header {
-  grid-column: 2 / 12;
+  grid-column: 1 / -1;
   grid-row: 1 / 2;
 }
 .main {
-  grid-column: 2 / 12;
+  grid-column: 3 / 11;
   grid-row: 2 / 3;
 }
 @media screen and (max-width: 700px) {
-  .header, .main {
+  .main {
     grid-column: 1 / -1;
   }
 }
